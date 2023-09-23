@@ -46,25 +46,60 @@
 # print(f"{tangerines_per_student}")
 # print(f"{remaining_tangerines} whole tangerine(s) will remain in the basket.")
 
-    population = int(input("Enter the population of the universe: "))
-    if population % 2 == 0:        alive = population // 2
-    else:        alive = (population + 1) // 2
-    print("Number of survivors:", alive)
-    # 4    NUM1 = int(input("Enter a number: "))
-    Result = NUM1 << 1    if Result == 0:
-        print("The result of << is zero. Please enter a different number.")    else:
-        print("The result of << is", Result)
-        # 5        try:
-            num1 = float(input("Please enter the first number: "))            num2 = float(input("Please enter the second number: "))
-            operation = input("Please choose the operation (+, -, *, /): ")            if operation == '+':
-                result = num1 + num2            elif operation == '-':
-                result = num1 - num2            elif operation == '*':
-                result = num1 * num2            elif operation == '/':
-                if num2 != 0:                    result = num1 / num2
-                else:                    raise ZeroDivisionError("Division by zero is not allowed.")
-            else:                raise ValueError("Invalid operation entered.")
-            print(f"{num1} {operation} {num2} = {result:.3f}")
-        except ValueError as ve:            print(f"Error: {ve}")
-        except ZeroDivisionError as zde:            print(f"Error: {zde}")
-        except Exception as e:
-            print(f"An unexpected error occurred: {e}")
+# # Task 2.2
+# number = int(input("Enter Here:" ))
+
+# if 1000 <= number <= 9999:
+#     thousands_digit = number // 1000
+#     hundreds_digit = (number // 100) % 10
+#     tens_digit = (number // 10) % 10
+#     units_digit = number % 10
+
+#     print(f"The digit in the thousands position is {thousands_digit}")
+#     print(f"The digit in the hundreds position is {hundreds_digit}")
+#     print(f"The digit in the tens position is {tens_digit}")
+#     print(f"The digit in the units position is {units_digit}")
+# else:
+#     print("Please enter a valid four-digit number.")
+
+# # Task 2.3
+# population = int(input("The population number: "))
+# if population % 2 == 0:
+#     alive = population // 2
+# else:
+#     alive = (population + 1) // 2
+# print( alive)
+
+# # Task 2.4
+# NUM1 = int(input("Enter a number: "))
+# Result = NUM1 << 1
+# if Result == 0:
+#     print("The result of << is zero. Please enter a different number.")
+# else:
+#     print("The result of << is", Result)
+
+# # Task 2.5
+# try:
+#     num1 = float(input("Please enter the first number: "))
+#     num2 = float(input("Please enter the second number: "))
+#     operation = input("Please choose the operation (+, -, *, /): ")
+#     if operation == '+':
+#         result = num1 + num2
+#     elif operation == '-':
+#         result = num1 - num2
+#     elif operation == '*':
+#         result = num1 * num2
+#     elif operation == '/':
+#         if num2 != 0:
+#             result = num1 / num2
+#         else:
+#             raise ZeroDivisionError("Division by zero is not allowed.")
+#     else:
+#         raise ValueError("Invalid operation entered.")
+#     print(f"{num1} {operation} {num2} = {result:.3f}")
+# except ValueError as ve:
+#     print(f"Error: {ve}")
+# except ZeroDivisionError as zde:
+#     print(f"Error: {zde}")
+# except Exception as e:
+#     print(f"An unexpected error occurred: {e}")
