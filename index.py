@@ -9,10 +9,14 @@
 #     print(number)
 
 # # Task 1.3
-# user_input = int(input("Enter Number: "))
-# for number in range(3):
-#     print(number + user_input)
-#     number += 1
+# try:
+#     user_input = int(input("Enter Number: "))
+#     for number in range(3):
+#         print(number + user_input)
+#         number += 1
+# except ValueError: 
+#     print("Invalid input. Please enter an integer.")
+    
 
 # # Task 1.4
 # number1 = int(input("Enter the first number: "))
@@ -31,13 +35,36 @@
 # print(f"Volume: {volume}")
 # print(f"Total surface area: {surface_area}")
 
-# Task 2.1
-schoolchildren = int(input("Enter the number of schoolchildren: "))
-tangerines = int(input("Enter the number of tangerines: "))
+# # Task 2.1
+# schoolchildren = int(input("Enter the number of schoolchildren: "))
+# tangerines = int(input("Enter the number of tangerines: "))
 
-tangerines_per_student = tangerines // schoolchildren
+# tangerines_per_student = tangerines // schoolchildren
 
-remaining_tangerines = tangerines % schoolchildren
+# remaining_tangerines = tangerines % schoolchildren
 
-print(f"{tangerines_per_student}")
-print(f"{remaining_tangerines} whole tangerine(s) will remain in the basket.")
+# print(f"{tangerines_per_student}")
+# print(f"{remaining_tangerines} whole tangerine(s) will remain in the basket.")
+
+    population = int(input("Enter the population of the universe: "))
+    if population % 2 == 0:        alive = population // 2
+    else:        alive = (population + 1) // 2
+    print("Number of survivors:", alive)
+    # 4    NUM1 = int(input("Enter a number: "))
+    Result = NUM1 << 1    if Result == 0:
+        print("The result of << is zero. Please enter a different number.")    else:
+        print("The result of << is", Result)
+        # 5        try:
+            num1 = float(input("Please enter the first number: "))            num2 = float(input("Please enter the second number: "))
+            operation = input("Please choose the operation (+, -, *, /): ")            if operation == '+':
+                result = num1 + num2            elif operation == '-':
+                result = num1 - num2            elif operation == '*':
+                result = num1 * num2            elif operation == '/':
+                if num2 != 0:                    result = num1 / num2
+                else:                    raise ZeroDivisionError("Division by zero is not allowed.")
+            else:                raise ValueError("Invalid operation entered.")
+            print(f"{num1} {operation} {num2} = {result:.3f}")
+        except ValueError as ve:            print(f"Error: {ve}")
+        except ZeroDivisionError as zde:            print(f"Error: {zde}")
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
