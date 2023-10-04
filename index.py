@@ -71,12 +71,12 @@
 # print( alive)
 
 # # Task 2.4
-# NUM1 = int(input("Enter a number: "))
-# Result = NUM1 << 1
-# if Result == 0:
-#     print("The result of << is zero. Please enter a different number.")
-# else:
-#     print("The result of << is", Result)
+NUM1 = int(input("Enter a number: "))
+Result = NUM1 << 1
+if Result == 0:
+    print("The result of << is zero. Please enter a different number.")
+else:
+    print("The result of << is ", Result)
 
 # # Task 2.5
 # try:
