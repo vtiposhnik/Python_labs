@@ -71,35 +71,35 @@
 # print( alive)
 
 # # Task 2.4
-NUM1 = int(input("Enter a number: "))
-Result = NUM1 << 1
-if Result == 0:
-    print("The result of << is zero. Please enter a different number.")
-else:
-    print("The result of << is ", Result)
+# NUM1 = int(input("Enter a number: "))
+# Result = NUM1 << 1
+# if Result == 0:
+#     print("The result of << is zero. Please enter a different number.")
+# else:
+#     print("The result of << is ", Result)
 
 # # Task 2.5
-# try:
-#     num1 = float(input("Please enter the first number: "))
-#     num2 = float(input("Please enter the second number: "))
-#     operation = input("Please choose the operation (+, -, *, /): ")
-#     if operation == '+':
-#         result = num1 + num2
-#     elif operation == '-':
-#         result = num1 - num2
-#     elif operation == '*':
-#         result = num1 * num2
-#     elif operation == '/':
-#         if num2 != 0:
-#             result = num1 / num2
-#         else:
-#             raise ZeroDivisionError("Division by zero is not allowed.")
-#     else:
-#         raise ValueError("Invalid operation entered.")
-#     print(f"{num1} {operation} {num2} = {result:.3f}")
-# except ValueError as ve:
-#     print(f"Error: {ve}")
-# except ZeroDivisionError as zde:
-#     print(f"Error: {zde}")
-# except Exception as e:
-#     print(f"An unexpected error occurred: {e}")
+try:
+    num1 = float(input("Please enter the first number: "))
+    num2 = float(input("Please enter the second number: "))
+    operation = input("Please choose the operation (+, -, *, /): ")
+    if operation == '+':
+        result = num1 + num2
+    elif operation == '-':
+        result = num1 - num2
+    elif operation == '*':
+        result = num1 * num2
+    elif operation == '/':
+        if num2 != 0:
+            result = num1 / num2
+        else:
+            raise ZeroDivisionError("Division by zero is not allowed.")
+    else:
+        raise ValueError("Invalid operation entered.")
+    print(f"{num1} {operation} {num2} = {result:.3f}")
+except ValueError as ve:
+    print(f"Error: {ve}")
+except ZeroDivisionError as zde:
+    print(f"Error: {zde}")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
