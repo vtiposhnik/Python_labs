@@ -221,34 +221,6 @@ try:
 except ValueError as e:
     print("error:", e)
 
-# 3.1 Problem
-try:
-    cars_list = {}
-    while True:
-        # take user input for manufacturer and model, and exit when 'done' is entered
-        input_data = input("enter manufacturer and model, and when you're done, input 'done': ")
-        if input_data.lower() == 'done':
-            break
-        # split input into manufacturer and model, then strip any extra spaces
-        manufacturer, model = map(str.strip, input_data.split(','))
-
-        if manufacturer in cars_list:
-            cars_list[manufacturer].append(model)
-        else:
-            cars_list[manufacturer] = [model]
-    # get a sorted list of manufacturers
-    manufacturers = list(cars_list.keys())
-    manufacturers.sort()
-
-    # display manufacturer, model count, and models for each manufacturer
-    for manufacturer in manufacturers:
-        models = cars_list[manufacturer]
-        count = len(models)
-        print(f"{manufacturer} {count}")
-        for model in models:
-            print(f"- {model}")
-except Exception as e:
-    print("error:", e)
 
 # Bonus Problem
 try:

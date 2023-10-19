@@ -1,4 +1,6 @@
 def task_1():
+    #function takes an input number and prints a sequence of even numbers 
+    # starting from 2 up to the given number, with an initial "1" printed before the sequence.
     count = int(input("Number: "))
 
     akzhol = 0
@@ -14,6 +16,7 @@ def task_1():
 
 
 def task_2():
+    # it takes a user input number, calculates its factorial using a while loop, and then prints the result.
     user_input = int(input("Number: "))
 
     def factorial(n):
@@ -35,6 +38,8 @@ def task_2():
 # task_2()
 
 def task_3():
+    # this function takes a user input number and checks if it's present in a list of numbers ranging from 1 to 999.
+    # then prints out a corresponding message.
     user_input = int(input("Number: "))
     numbers = [int(x) for x in range(1, 1000)]
 
@@ -50,6 +55,7 @@ def task_3():
 # task_3()
 
 def task_4():
+    # takes a user input string, counts the occurrences of the letter 'a' in it, and prints the count
     user_input = str(input("String: "))
 
     strings = []
@@ -70,6 +76,7 @@ def task_4():
 # task_4()
 
 def task_5():
+    #function takes a user input number, converts it to a string, extracts each digit, calculates their sum, and then prints the result. 
     user_input = int(input("Number: "))
     user_input = str(user_input)
 
@@ -89,6 +96,8 @@ def task_5():
 
 
 def fibonnaci():
+    # this function calculates and prints the Fibonacci sequence up to a user input number
+    # it starts with 0 and 1, and then generates subsequent Fibonacci numbers
     f1, f2 = 0, 1
     user_input = int(input("Number: "))
     akzhol = []
@@ -101,6 +110,7 @@ def fibonnaci():
 # fibonnaci()
 
 def task_7():
+    # function takes a user input string and reverses it using Python's string slicing. It then prints the reversed string
     user_input = str(input("String: "))
 
     index = 0
@@ -139,6 +149,8 @@ def task_8():
 # task_8()
 
 def task_9():
+    # this function generates a random number and lets the user guess it
+    # providing hints if the guess is too large or too small, and congratulating when the guess is correct
     import random
 
     numbers = [int(x) for x in range(1, 101)]
@@ -170,6 +182,8 @@ def task_9():
 
 
 def task_10():
+    #This function takes a user input string, reverses it, and checks if the reversed string is a palindrome
+    # it then provides corresponding messages and exits the loop.
     user_input = str(input("String: "))
 
     while True:
@@ -205,6 +219,7 @@ def task_11():
 # task_11()
 
 def task_12():
+    # function calculates and prints prime numbers up to a user input number it starts with 3 and iterates through odd numbers, checking if they are prime.
     def simple_number(n):
         for i in range(2, n + 1):
             if n == i:
@@ -228,6 +243,7 @@ def task_12():
 # task_12()
 
 def task_13():
+    # this function takes a user input number, converts it to a string, reverses the string, and then prints the reversed string. 
     user_input = int(input("String: "))
     user_str = str(user_input)
     index = 0
@@ -242,6 +258,8 @@ def task_13():
 # task_13()
 
 def task_14():
+    # function takes a user input number, and if it's not prime, 
+    # it increments it until it finds the next prime number, which is then printed.
     def simple_number_check(n):
         for i in range(2, n + 1):
             if n == i:
@@ -270,6 +288,8 @@ def task_14():
 
 
 def task_15():
+    # this function takes a user input string and a number, 
+    # shifts the letters of the string in the alphabet by that number, and prints the result
     user_string = str(input("String: ")).lower()
     user_input = int(input("Number: "))
 
