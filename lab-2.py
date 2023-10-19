@@ -225,13 +225,13 @@
 #     print("YES")
 # else:
 #     print("NO")
-    
-x = int(input())
-y = int(input())
-x1 = int(input())
-y1 = int(input())
 
-if (y1 - y == 2 or y1 - y == - 2 and x1 - x == 1 or x1 - x == -1) or (x1 - x == 2 or x1 - x == -2 and y1 - y == 1 or y1 - y == -1):
+x = int(input("the initial x: "))
+y = int(input("the initial y: "))
+x1 = int(input("X coordinate of a prey: "))
+y1 = int(input("Y coordinate of a prey: "))
+
+if (y1 - y == 2 or y1 - y == -2 and x1 - x == 1 or x1 - x == -1) or (x1 - x == 2 or x1 - x == -2 and y1 - y == 1 or y1 - y == -1):
     print("YES")
 else:
     print("NO")
