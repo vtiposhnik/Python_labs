@@ -85,7 +85,9 @@
 # print(f"Unique items: {unique}")
 # print(f"Not unique items: {tuple(not_unique)}")
 
-# Task 4    
+# Task 4
+# Ne uspel vse options sdelat zdes
+# tolko view and add tasks
 todos = {}
 while True:
     print("Please choose the task you want to perform:")
