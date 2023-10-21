@@ -190,7 +190,7 @@ def task_10():
         akzhol = user_input[::-1]
 
         if akzhol == user_input:
-            print("Yeah, sonofabitch!")
+            print("Yeah!")
             break
         else:
             print("akzhol !")
